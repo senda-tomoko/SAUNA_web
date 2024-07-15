@@ -1,0 +1,35 @@
+<div class="AccountFormWrapper">
+  <section class="AccountFormContainer">
+    <h2 class="AccountFormContainer__title">新規登録</h2>
+
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <%= devise_error_messages! %>
+
+      <div class="mb-3">
+        <%= f.label :name, class: 'form-label Form__label--required' %>
+        <%= f.text_field :name, class: 'form-control', placeholder: 'ユーザー名を入力', autocomplete: 'name' %>
+      </div>
+
+      <div class="mb-3">
+        <%= f.label :email, class: 'form-label Form__label--required' %>
+        <%= f.email_field :email, class: 'form-control', placeholder: 'メールアドレスを入力', autocomplete: 'email' %>
+      </div>
+
+      <div class="mb-3">
+        <%= f.label :password, class: 'form-label Form__label--required' %>
+        <%= f.password_field :password, class: 'form-control', placeholder: 'パスワードを入力', autocomplete: 'off' %>
+      </div>
+
+      <div class="mb-3">
+        <%= f.label :password_confirmation, class: 'form-label Form__label--required' %>
+        <%= f.password_field :password_confirmation, class: 'form-control', placeholder: '確認用パスワードを入力', autocomplete: 'off' %>
+      </div>
+
+      <div class="actions">
+        <%= f.submit "新しいアカウントを作成", class: "btn mb-3 AccountForm__button AccountForm__button--primary" %>
+      </div>
+    <% end %>
+
+    <%= link_to "アカウントをお持ちの方はログイン", new_user_session_path, class: "btn AccountForm__button AccountForm__button--secondary" %>
+  </section>
+</div>

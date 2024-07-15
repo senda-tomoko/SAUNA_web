@@ -1,0 +1,7 @@
+<!-- app/views/accounts/show.html.erb -->
+<h2>Account Information</h2>
+
+<p><strong>Email:</strong> <%= @user.email %></p>
+<p><strong>Password:</strong> *********</p>
+
+<%= link_to 'Edit Account', edit_user_registration_path, class: 'btn btn-primary' %>

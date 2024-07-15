@@ -1,0 +1,10 @@
+<h1>Your Reservations</h1>
+<%= link_to 'New Reservation', new_reservation_path %>
+<ul>
+  <% @reservations.each do |reservation| %>
+    <li>
+      <%= reservation.start_time %> - <%= reservation.end_time %>
+      <%= reservation.status %>
+    </li>
+  <% end %>
+</ul>

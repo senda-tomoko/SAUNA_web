@@ -1,0 +1,288 @@
+/*
+ *= require font-awesome
+ */
+
+.header {
+    border-bottom: 1px solid #dddddd;
+    padding: 10px 0;
+    margin-left: 40px; /* 左側の余白 */
+    margin-right: 40px; /* 右側の余白 */
+  }
+
+  .headInbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .headLogoBox {
+    display: flex;
+    align-items: center;
+  }
+
+  .headLogo_img {
+    font-size: 3em;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .logo-link {
+    text-decoration: none;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .pcNavUl {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .pcNavUl li {
+    margin-left: 20px;
+  }
+
+  .pcNavUl a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+
+  .nav-link {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Text color */
+  }
+
+  .pc_shopNav .fas {
+    font-size: 1.5em;
+    color: #333;
+  }
+
+
+
+  .facility-info {
+    margin-top: 50px;
+  }
+
+  .facility-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .facility {
+    margin: 10px;
+    padding: 20px;
+    background: white;
+    border: 1px solid #ddd;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .facility h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+
+  .facility p {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+
+
+
+
+
+  body {
+    margin-left: 40px; /* 左側の余白 */
+    margin-right: 40px; /* 右側の余白 */
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+  }
+
+  .footer {
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .product-list-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+  }
+
+  /* app/assets/stylesheets/spree/frontend/all.css */
+.hero {
+    text-align: center;
+    padding: 300px 0;
+    background-size: auto 400%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('/assets/sauna1.jpg');
+    background-size: cover;
+    color: white;
+}
+
+  .hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+
+  .hero p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+  }
+
+  .hero .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+
+  .featured-products {
+    margin-top: 50px;
+  }
+
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .product {
+    margin: 10px;
+    padding: 20px;
+    background: white;
+    border: 1px solid #ddd;
+    width: 30%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .product img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .product h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+
+
+  .facility-images {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .facility-image-item {
+    flex: 1;
+  }
+
+  .facility-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .facility h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+
+  .facility p {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+
+  .access-info {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* 余白を追加 */
+  }
+
+  .access-info .map iframe {
+    width: 150%;
+    height: 400px; /* 高さを280pxに設定 */
+  }
+
+
+
+
+.AccountFormWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.AccountFormContainer {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.AccountFormContainer__title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.mb-3 {
+  margin-bottom: 15px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.AccountForm__button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.AccountForm__button--primary {
+  background-color: #007bff;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.AccountForm__button--secondary {
+  background-color: #6c757d;
+  color: #fff;
+  text-align: center;
+  display: block;
+}

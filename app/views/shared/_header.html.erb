@@ -1,0 +1,27 @@
+<!-- app/views/shared/_header.html.erb -->
+<header class="header">
+  <div class="container">
+    <div class="headInbox row">
+      <div class="headLogoBox col-md-6 col-sm-6">
+        <%= link_to root_path, class: 'logo-link' do %>
+          <h1 class="headLogo_img">Nordic Sauna</h1>
+        <% end %>
+      </div>
+      <div class="nav col-md-6 col-sm-6">
+        <nav>
+          <div id="pcNav" class="visible-lg visible-sm">
+            <ul class="pcNavUl header-dropmenu">
+              <li class="NavLi1"><%= link_to 'SAUNA', '#sauna', class: 'nav-link' %></li>
+              <li class="NavLi2"><%= link_to 'SHOP', '#shop', class: 'nav-link' %></li>
+              <li class="NavLi7 pc_shopNav om_icon">
+                <%= link_to cart_path, class: 'nav-link' do %>
+                  <i class="fa fa-shopping-cart"></i>
+                <% end %>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
